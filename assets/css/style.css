@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/img/1200px-SSBU-Pokémon_Stadium_2.webp);
+    background-repeat: no-repeat;
+    color: #FFCC01;
+}
+h2{
+    color: #f0f0f0;
+    font-style: oblique;
+}
+#buttonstart{
+    display: flex;
+    padding: 50px;
+    justify-content:center;
+}
+#buttonuser{
+    font-size:80px;
+    border-radius: 25px;
+    background-color: none;
+    cursor: pointer; 
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.50);
+    }
+}
+img{
+    width:150px;
+    height:150px;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#result, #scoreplayer, #choicecomputer, #scorecomputer{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(8, 136, 255);
+    font-weight: bold;
+}
+#result{
+    font-weight: bold;
+    color:yellow;
+    font-style: italic;
+}
