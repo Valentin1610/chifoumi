@@ -4,6 +4,7 @@ body{
     background-image: url(/assets/img/pokemon-une-arene-de-combat-a-ete-decouverte-dans-le-monde-reel.jpg);
     background-repeat: no-repeat;
     color: #FFCC01;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h2{
     color: #f0f0f0;
@@ -16,8 +17,8 @@ h2{
 }
 #buttonuser{
     font-size:80px;
-    border-radius: 25px;
-    background-color: none;
+    border: none;
+    background: none;
     cursor: pointer; 
     transition: transform 400ms;
     &:hover{
@@ -25,22 +26,51 @@ h2{
     }
 }
 img{
-    width:150px;
-    height:150px;
+    width:130px;
+    height:130px;
 }
-button{
+#buttonreset{
+    justify-content: center;
+    display: flex;
+    background: none;
+}
+#reset{
+    background: none;
     border: none;
+    color: black;
+    transition: transform 400ms;
+    &:hover{
+        transform:scale(1.50);
+    }
+}
+#wins{
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+#grolem, #mystherbe, #insecateur{
+    border:none;
     background: none;
     cursor: pointer;
+    transition: transform 450ms;
+    &:hover{
+        transform:scale(1.30);
+    }
 }
-#result, #scoreplayer, #choicecomputer, #scorecomputer{
-    font-size: 35px;
+#result, #choicecomputer{
     text-align: center;
-    color: rgb(8, 136, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 #result{
-    font-weight: bold;
-    color:yellow;
+    font-size: 50px;
+    font-weight: bolder;
     font-style: italic;
+}
+#scoreplayer, #scorecomputer{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 750;
 }
