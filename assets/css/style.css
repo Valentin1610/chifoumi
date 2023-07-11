@@ -4,7 +4,7 @@ body{
     background-image: url(../img/arene-min.png); 
     background-repeat: no-repeat;
     color: #FFCC01;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 h2{
     color: #f0f0f0;
@@ -19,7 +19,6 @@ h2{
     font-size:80px;
     border: none;
     background: none;
-    cursor: pointer; 
     transition: transform 400ms;
     &:hover{
         transform: scale(1.50);
@@ -45,32 +44,32 @@ img{
 }
 #wins{
     font-size: x-large;
-    font-weight: bolder;
     color: rgb(255, 255, 255);
     font-style: italic;
 }
 #grolem, #mystherbe, #insecateur{
     border:none;
     background: none;
-    cursor: pointer;
     transition: transform 450ms;
     &:hover{
         transform:scale(1.30);
     }
 }
-#result, #choicecomputer{
+#result{
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
+    color: rgb(238, 255, 0);
 }
 #result{
     font-size: 50px;
-    font-weight: bolder;
     font-style: italic;
 }
 #scoreplayer, #scorecomputer{
-    color: white;
+    color: #FFCC01;
     font-size: 35px;
     text-align: center;
-    font-weight: 750;
+}
+#choicecomputer{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
 }
