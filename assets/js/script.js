@@ -1,4 +1,3 @@
-
 let buttonIdStart = document.getElementById('buttonstart')
 let buttonStart = document.getElementById('buttonuser')
 let titleStart = document .getElementById('titlestart')
@@ -8,7 +7,7 @@ let battleUser = document.getElementById('battle')
 let resetGameBtn = document.getElementById('buttonreset')
 let score = document.getElementById('score')
 let percentage = document.getElementById('wins')
-let soundWin = document.getElementById('soundwin')
+let title = document.getElementById('title')
 
 let wins = 0; let loses = 0;
 let gamePlayed = 0 ;
@@ -18,11 +17,13 @@ let battleScore = document.getElementById('scoreplayer')
 let battleScoreComputer = document.getElementById('scorecomputer')
 let choiceComputer = document.getElementById('choicecomputer')
 
-let grolem = document.getElementById('grolem')
+let golem = document.getElementById('grolem')
 let mystherbe = document.getElementById('mystherbe')
 let insecateur = document.getElementById('insecateur')
 
+// Bouton Start
 function hiddenButton () {
+    title.classList.add('d-none')
     buttonStart.classList.add('d-none')
     titleStart.classList.add('d-none')
     buttonIdStart.classList.add('d-none')
@@ -30,7 +31,9 @@ function hiddenButton () {
     soundBattle.classList.remove('d-none')
     battleUser.classList.remove('d-none')
 }
+// Fin bouton Start
 
+// Choix de l'oridateur et des conditions
 const choices = ["Pierre", "Feuille", "Ciseaux"]
 
 function randomComputer (userChoice){
@@ -67,18 +70,21 @@ function randomComputer (userChoice){
     battleScore.innerHTML = "Sacha : " + wins
     battleScoreComputer.innerHTML = "Regis : " + loses;
 }
+// Fin des Choix et des conditions 
 
+// Calcul du pourcentage de victoire 
 function percentageCalculated(){
 let percentageCalculate = (wins / gamePlayed)* 100;
 percentage.innerHTML = "Pourcentage de victoires :  " + percentageCalculate.toFixed(2) + "%"
 }
 
+// Fin de Calcul du pourcentage de victoire 
 
 buttonStart.addEventListener('click', hiddenButton)
-grolem.addEventListener('click', () => randomComputer ("Pierre") )  
+golem.addEventListener('click', () => randomComputer ("Pierre") )  
 mystherbe.addEventListener('click', () => randomComputer ("Feuille"))
 insecateur.addEventListener('click', () => randomComputer ("Ciseaux"))
-grolem.addEventListener('click', function(){
+golem.addEventListener('click', function(){
     gamePlayed++;
     percentageCalculated()
 })
@@ -91,7 +97,7 @@ mystherbe.addEventListener('click', function(){
     percentageCalculated()
 })
 
-
+// Bouton Restart 
 const restartButton = document.getElementById('reset')
 restartButton.addEventListener('click', () => {
     battleScore.innerHTML = "Sacha : 0"
@@ -103,3 +109,5 @@ restartButton.addEventListener('click', () => {
         cell.classList.remove("pierre", "feuille", "ciseaux") 
     }
 })
+
+// Fin de Bouton Restart 

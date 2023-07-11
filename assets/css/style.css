@@ -1,8 +1,9 @@
 body{
+    background-size: cover;
     margin: 0;
     padding: 0;
     background-image: url(../img/arene-min.png); 
-    background-repeat: no-repeat;
+    background-repeat: repeat; 
     color: #FFCC01;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
@@ -12,11 +13,11 @@ h2{
 }
 #buttonstart{
     display: flex;
-    padding: 50px;
+    padding: 35px;
     justify-content:center;
 }
 #buttonuser{
-    font-size:80px;
+    font-size:70px;
     border: none;
     background: none;
     transition: transform 400ms;
@@ -57,7 +58,7 @@ img{
 }
 #result{
     text-align: center;
-    color: rgb(238, 255, 0);
+    color: #FFCC01;
 }
 #result{
     font-size: 50px;
